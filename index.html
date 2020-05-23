@@ -141,10 +141,10 @@
                       success: function (data) {
                         if (data['result'] == 'error') {
                             alert("Oops! Something went wrong. Please send message manually to your teacher <3 Here is the transcript: " + saved_gratitude)
-                            gratitude_elem.style.background = "rgba(220, 220, 220, .25)";
+                            gratitude_elem.style.background = "rgba(220, 220, 220, .35)";
                             gratitude_elem.placeholder = "Type again to send another";
                         } else {
-                            gratitude_elem.style.background = "rgba(220, 220, 220, .25)";
+                            gratitude_elem.style.background = "rgba(220, 220, 220, .35)";
                             gratitude_elem.placeholder = "Gratitude sent. Type again to send another";
                         }
                         console.log(data)
@@ -327,7 +327,7 @@
   
   textarea::placeholder {
     color: black;
-    font-weight: bold;
+    font-weight: strong;
   }
 
   </style>
